@@ -1,0 +1,169 @@
+/* reset-code */
+/* *{
+    padding: 0;
+    margin: 0;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+img{
+    max-width: 100%;
+}
+.clear{
+    content:"";
+    display: block;
+    clear: both;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.mid-content{
+    width: 1300px;
+    margin: auto;
+}
+body,h1,h2,h3,h4,h5,h6,p,a,span{
+    font-family: 'Work Sans', sans-serif;
+}
+ .header-section {
+	background-color: black;
+	height: 69px;
+	padding: 5px 0;
+}
+ .header-loggo{
+     width: 20%;
+ }
+ .header-loggo img{
+    height: 68px;
+    width: auto;
+ } */
+ 
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.text-c{
+    text-align: center;
+}
+.text-r{
+    text-align: right;
+}
+.float-l{
+    float: left;
+}
+.float-r{
+    float: right;
+}
+.clear::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.t-w{
+    color: #fff;
+}
+.m-content {
+    max-width: 1130px;
+    margin: auto;
+}
+body,h1,h2,h3,h4,h5,h6,p,a,span{
+    font-family: 'Work Sans', sans-serif;
+}
+        /* .header-menu */
+ .header-menu{
+     width: 80%;
+ }
+.primary-menu ul {
+	list-style: none;
+	
+}
+.primary-menu ul li {
+	display: inline-block;
+    position: relative;
+}
+.primary-menu ul li a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 0px 15px;
+    color: #fff;
+    line-height: 69px;
+    position: relative;
+   transition: 0.5s;
+ }
+ .primary-menu ul li a::after {
+	content: "";
+    left: 19%;
+	bottom: 16px;
+	position: absolute;
+	height: 6%;
+    width: 0;
+	background-color: #fff;
+    transition: 0.5s;
+}
+.primary-menu ul li a:hover::after {
+    width: 69%;  
+}
+  /* service drop down menu  */
+.primary-menu ul li ul{
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: black;
+      opacity: 0;
+      visibility: hidden;
+      width: 150px;
+      transition: 0.8s;
+      transform-origin:top ;
+}
+.primary-menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.8s;   
+}
+.primary-menu ul li ul li {
+    display: block;
+	text-align: left;
+}
+  .primary-menu ul li ul li a {
+	display: block;
+	line-height: 45px;
+}
+.primary-menu ul li ul li a:hover{
+      background-color: #fff;
+      color: #000;
+}
+.primary-menu ul li ul li a::after {
+	content: "";
+	left: 10%;
+	bottom: 11px;
+	position: absolute;
+	height: 6%;
+	width: 0;
+	background-color: black;
+}
+.primary-menu ul li ul li a:hover::after {
+	width: 34%;
+	transition: 0.5s;
+}
+.primary-menu ul li ul li:first-child{
+    border-top: 3px solid #fff;
+    margin-top: 5px;
+}
